@@ -74,9 +74,7 @@ class _EditImageScreenState extends State<EditImageScreen> {
     }
   }
 
-  undo() {
- 
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -85,23 +83,6 @@ class _EditImageScreenState extends State<EditImageScreen> {
       appBar: AppBar(
         backgroundColor: Colors.black26,
         actions: [
-          ElevatedButton(
-            onPressed: undo,
-            style: ElevatedButton.styleFrom(
-              primary: Colors.transparent,
-              elevation: 0,
-            ),
-            child: ColorFiltered(
-              colorFilter: ColorFilter.mode(
-                Colors.black,
-                BlendMode.saturation,
-              ),
-              child: Icon(
-                Icons.undo_rounded,
-                color: Colors.white,
-              ),
-            ),
-          ),
           ElevatedButton(
             onPressed: convertWidgetToImage,
             style: ElevatedButton.styleFrom(
